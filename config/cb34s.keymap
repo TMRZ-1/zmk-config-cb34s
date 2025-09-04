@@ -357,10 +357,10 @@
         MAC_layer {
             label = "MAC";
             bindings = <
-&mt DEL Q  &kp W  &kp C  &kp V     &kp X      &kp J       &kp F     &kp U          &kp O      &kp Z
-&kp A      &kp S  &kp T  &kp R     &kp B      &kp K       &kp N     &kp E          &kp I      &kp H
-&kp D      &kp G  &kp L  &kp D     &kp P      &kp DOT     &kp M     &kp BACKSPACE  &kp COMMA  &mo 3
-                         &kp LGUI  &kp SPACE  &kp RSHIFT  &kp RALT
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4  &kp N5     &kp NUMBER_6      &kp N7             &kp N8                &kp N9  &kp N0
+&kp ESCAPE    &none         &kp LEFT_SHIFT  &none         &none      &kp MINUS         &kp EQUAL          &kp NON_US_BACKSLASH  &none   &kp SQT
+&kp TAB       &none         &none           &none         &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none                 &none   &none
+                                            &kp LGUI      &kp SPACE  &kp RSHIFT        &kp BACKSPACE
             >;
         };
 
