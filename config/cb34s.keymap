@@ -24,9 +24,6 @@
 &lt { quick_tap_ms = <200>; };
 
 // Sticky Layer Behavior - release sticky behavior after x ms
-
-&sk { release-after-ms = <1800>; };
-
 // MACROS
 // ===========================================================================================================
 /*
@@ -40,52 +37,6 @@
 */
 
 / {
-    macros {
-        macro_sch: macro_sch {
-            label = "Macro_sch";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp S>,
-                <&macro_release>,
-                <&kp RSHIFT>,
-                <&macro_tap>,
-                <&kp C &kp H>;
-
-            tap-ms = <20>;
-        };
-
-        macro_ch: macro_ch {
-            label = "Macro_ch";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp C>,
-                <&macro_release>,
-                <&kp RSHIFT>,
-                <&macro_tap>,
-                <&kp H>;
-
-            tap-ms = <20>;
-        };
-
-        macro_zu: macro_zu {
-            label = "Macro_zu";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp Z>,
-                <&macro_release>,
-                <&kp RSHIFT>,
-                <&macro_tap>,
-                <&kp U>;
-
-            tap-ms = <20>;
-        };
-    };
 };
 
 // COMBOS
@@ -115,184 +66,11 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
-            timeout-ms = <40>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-
-        combo_tab {
-            timeout-ms = <40>;
-            key-positions = <11 12>;
-            bindings = <&kp TAB>;
-        };
-
-        combo_enter {
-            timeout-ms = <40>;
-            key-positions = <12 13>;
-            bindings = <&kp ENTER>;
-        };
-
-        combo_lpar {
-            timeout-ms = <40>;
-            key-positions = <13 14>;
-            bindings = <&kp LPAR>;
-        };
-
-        combo_rpar {
-            timeout-ms = <40>;
-            key-positions = <15 16>;
-            bindings = <&kp RPAR>;
-        };
-
-        combo_comfy_left {
-            timeout-ms = <40>;
-            key-positions = <21 22>;
-            bindings = <&to 0>;
-            layers = <0 2>;
-        };
-
-        combo_comfy_right {
-            timeout-ms = <40>;
-            key-positions = <27 28>;
-            bindings = <&to 0>;
-            layers = <0 2>;
-        };
-
-        combo_default_left {
-            timeout-ms = <40>;
-            key-positions = <22 23>;
-            bindings = <&to 0>;
-        };
-
-        combo_sk_shift {
-            timeout-ms = <40>;
-            key-positions = <16 17>;
-            bindings = <&sk LSHIFT>;
-        };
-
-        combo_ble_left {
-            timeout-ms = <40>;
-            key-positions = <20 21 22>;
-            bindings = <&to 0>;
-        };
-
         // CHECK
-
-        combo_repeat {
-            timeout-ms = <40>;
-            key-positions = <18 19>;
-            bindings = <&key_repeat>;
-        };
-
-        combo_default_left_MAC {
-            timeout-ms = <40>;
-            key-positions = <22 23>;
-            bindings = <&to 1>;
-            layers = <1>;
-        };
-
-        combo_comfy_left_MAC {
-            timeout-ms = <40>;
-            key-positions = <21 22>;
-            bindings = <&to 0>;
-            layers = <1>;
-        };
-
         // BASE LAYERS
-
-        combo_kneir_mac_layer {
-            timeout-ms = <40>;
-            key-positions = <6 9>;
-            bindings = <&to 1>;
-            layers = <0 2>;
-        };
-
-        combo_kneir_win_layer {
-            timeout-ms = <40>;
-            key-positions = <10 13>;
-            bindings = <&to 0>;
-            layers = <0 1 2>;
-        };
-
-        combo_qwerty_win_layer {
-            timeout-ms = <40>;
-            key-positions = <0 3>;
-            bindings = <&to 0>;
-            layers = <1>;
-        };
-
-        combo_number_layer_left {
-            timeout-ms = <40>;
-            key-positions = <20 23>;
-            bindings = <&to 0>;
-        };
-
         // SYMBOLS
-
-        combo_dot {
-            timeout-ms = <40>;
-            key-positions = <26 27>;
-            bindings = <&kp DOT>;
-        };
-
-        combo_letter_percent {
-            timeout-ms = <40>;
-            key-positions = <27 28 29>;
-            bindings = <&kp PERCENT>;
-        };
-
         // ALPHAS
-
-        combo_letter_q {
-            timeout-ms = <40>;
-            key-positions = <1 2>;
-            bindings = <&kp Q>;
-        };
-
-        combo_letter_p {
-            timeout-ms = <40>;
-            key-positions = <2 3>;
-            bindings = <&kp P>;
-        };
-
-        combo_letter_b {
-            timeout-ms = <40>;
-            key-positions = <22 23>;
-            bindings = <&kp B>;
-        };
-
-        combo_letter_j {
-            timeout-ms = <40>;
-            key-positions = <6 7>;
-            bindings = <&kp J>;
-        };
-
-        combo_letter_k {
-            timeout-ms = <40>;
-            key-positions = <27 28>;
-            bindings = <&kp K>;
-        };
-
         // MACROS
-
-        combo_sch {
-            timeout-ms = <40>;
-            key-positions = <2 11>;
-            bindings = <&macro_sch>;
-        };
-
-        combo_ch {
-            timeout-ms = <40>;
-            key-positions = <2 13>;
-            bindings = <&macro_ch>;
-        };
-
-        combo_zu {
-            timeout-ms = <40>;
-            key-positions = <7 8>;
-            bindings = <&macro_zu>;
-        };
     };
 
     // BEHAVIOR    
