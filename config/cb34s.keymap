@@ -20,7 +20,9 @@
 #define COMMA_L     8
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-&lt { quick_tap_ms = <200>; };
+&lt {
+    quick_tap_ms = <200>;
+};
 
 // Sticky Layer Behavior - release sticky behavior after x ms
 
