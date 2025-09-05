@@ -19,16 +19,15 @@
 #define NUMBERS_L   7
 #define COMMA_L     8
 
-// Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-&lt {
-    quick_tap_ms = <200>;
+// Hold-tap Behavior
+&ht {
+    quick-tap-ms = <200>;
 };
 
-// Sticky Layer Behavior - release sticky behavior after x ms
+// Sticky Layer Behavior
 &sk { 
     release-after-ms = <1800>; 
 };
-
 // ===========================================================================================================
 // BEHAVIORS
 // ===========================================================================================================
