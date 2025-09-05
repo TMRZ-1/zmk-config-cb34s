@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include "keymap_eurkey_swiss_de.h"
 
@@ -151,10 +150,10 @@
         f_row {
             label = "FROW";
             bindings = <
-&none           &kp UP_ARROW    &none            &none      &none      &kp F1      &kp F2          &kp F3   &kp F4   &bt BT_CLR
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none      &none      &kp F5      &kp F6          &kp F7   &kp F8   &bt BT_NXT
-&none           &none           &none            &none      &none      &kp F9      &kp F10         &kp F11  &kp F12  &bt BT_PRV
-                                                 &kp LCTRL  &kp SPACE  &kp RSHIFT  &bt BT_CLR_ALL
+&none           &kp UP_ARROW    &none            &none      &none      &kp F1      &kp F2   &kp F3   &kp F4   &none
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none      &none      &kp F5      &kp F6   &kp F7   &kp F8   &none
+&none           &none           &none            &none      &none      &kp F9      &kp F10  &kp F11  &kp F12  &none
+                                                 &kp LCTRL  &kp SPACE  &kp RSHIFT  &none
             >;
         };
 
@@ -172,10 +171,10 @@
         numsym_layer {
             label = "Symbols";
             bindings = <
-&mt F1 N1  &mt F2 N2  &mt F3 N3  &mt F4 N4       &mt F5 N5      &kp N6         &kp N7             &kp N8             &kp N9    &kp N0
-&kp TAB    &kp UNDER  &kp MINUS  &kp EQUAL       &kp LS(EQUAL)  &mt RBKT LBKT  &kp AT             &mt DQT SQT        &kp DQT   &kp DEL
-&kp LGUI   &kp EXCL   &kp QMARK  &mt COLON SEMI  &kp COLON      &mt RBRC LBRC  &mt RA(LBKT) FSLH  &mt RA(RBKT) BSLH  &kp PIPE  &none
-                                 &kp LALT        &sk LEFT_GUI   &to 0          &kp RALT
+&none  &none  &none  &none     &none  &none  &none     &none  &none  &none
+&none  &none  &none  &none     &none  &none  &none     &none  &none  &none
+&none  &none  &none  &none     &none  &none  &none     &none  &none  &none
+                     &kp LALT  &none  &none  &kp RALT
             >;
         };
 
