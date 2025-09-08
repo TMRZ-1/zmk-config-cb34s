@@ -21,14 +21,12 @@
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 
-tapping-term-ms = <250>;};
+tapping-term-ms {
+    = <250>;};
 
 // Sticky Layer Behavior - release sticky behavior after x ms
 
-&mt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <250>;
-};
+
 
 // MACROS
 // ===========================================================================================================
@@ -42,7 +40,7 @@ tapping-term-ms = <250>;};
 
 */
 
-/ {
+/
 };
 
 // COMBOS
