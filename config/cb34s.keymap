@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include "keymap_eurkey_swiss_de.h"
 
@@ -22,12 +21,12 @@
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 
 tapping-term-ms {
-    = <250>;};
+    = <
+
+    250 = >;
+};
 
 // Sticky Layer Behavior - release sticky behavior after x ms
-
-
-
 // MACROS
 // ===========================================================================================================
 /*
@@ -40,8 +39,8 @@ tapping-term-ms {
 
 */
 
-/
-};
+/ {
+    };
 
 // COMBOS
 // ===========================================================================================================
@@ -66,7 +65,8 @@ tapping-term-ms {
 
 */
 
-/ {
+/
+
     combos {
         compatible = "zmk,combos";
 
@@ -152,8 +152,8 @@ tapping-term-ms {
         f_row {
             label = "FROW";
             bindings = <
-&none           &kp UP_ARROW    &none            &none      &none      &kp F1      &kp F2   &kp F3   &kp F4   &bt BT_CLR
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none      &none      &kp F5      &kp F6   &kp F7   &kp F8   &bt BT_NXT
+&none           &kp UP_ARROW    &none            &none      &none      &kp F1      &kp F2   &kp F3   &kp F4   &none
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none      &none      &kp F5      &kp F6   &kp F7   &kp F8   &none
 &none           &none           &none            &none      &none      &kp F9      &kp F10  &kp F11  &kp F12  &none
                                                  &kp LCTRL  &kp SPACE  &kp RSHIFT  &none
             >;
