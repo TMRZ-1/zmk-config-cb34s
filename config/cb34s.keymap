@@ -21,9 +21,15 @@
 // Sticky Layer Behavior - release sticky behavior after x ms
 // ===========================================================================================================
 
+&mt {
+    tapping-term-ms = <250>;
+    flavor = "tap-preferred";
+};
+
 / {
     combos {
         compatible = "zmk,combos";
+
         // tutaj możesz dodać definicje combos
     };
 
@@ -44,6 +50,7 @@
 
         // ===========================================================================================================
         // 0 = Default
+
         default_layer {
             label = "Base";
             bindings = <
@@ -56,6 +63,7 @@
 
         // ===========================================================================================================
         // 1 = Numbers
+
         numbers {
             label = "num";
             bindings = <
@@ -68,6 +76,7 @@
 
         // ===========================================================================================================
         // 2 = F-Row
+
         f_row {
             label = "FROW";
             bindings = <
@@ -80,59 +89,15 @@
 
         // ===========================================================================================================
         // 3 = Symbols
-        numsym_layer {
-            label = "Symbols";
-            bindings = <
-&none  &none  &none  &none     &none  &none  &none     &none  &none  &none
-&none  &none  &none  &none     &none  &none  &none     &none  &none  &none
-&none  &none  &none  &none     &none  &none  &none     &none  &none  &none
-                     &kp LALT  &none  &none  &kp RALT
-            >;
-        };
-
         // ===========================================================================================================
         // 4 = Navigation (szczegóły do uzupełnienia)
-        nav {
-            label = "Nav";
-            bindings = <
-                // tu wpisz swoje klawisze nawigacyjne
-            >;
-        };
-
         // ===========================================================================================================
         // 5 = Bluetooth (szczegóły do uzupełnienia)
-        ble {
-            label = "Bluetooth";
-            bindings = <
-                // tu wpisz klawisze BT
-            >;
-        };
-
         // ===========================================================================================================
         // 6 = Comfort (szczegóły do uzupełnienia)
-        comfy {
-            label = "Comfy";
-            bindings = <
-                // klawisze comfort
-            >;
-        };
-
         // ===========================================================================================================
         // 7 = Numbers (wariant drugi, do uzupełnienia)
-        numbers2 {
-            label = "Numbers";
-            bindings = <
-                // dodatkowe numery
-            >;
-        };
-
         // ===========================================================================================================
         // 8 = Comfort Mac (szczegóły do uzupełnienia)
-        comfy_mac {
-            label = "ComfyMac";
-            bindings = <
-                // klawisze comfort mac
-            >;
-        };
     };
 };
